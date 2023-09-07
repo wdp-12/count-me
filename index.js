@@ -2,15 +2,15 @@ function countMe(arr) {
   // Membuat objek kosong untuk menyimpan hasil perhitungan
   const objek = {};
 
-  // Iterasi melalui array input
+ 
   for (let i = 0; i < arr.length; i++) {
     const Value = arr[i];
 
-    // Jika nilai sudah ada dalam objek countObj, tambahkan 1 ke nilai tersebut
+    // Jika nilai sudah ada dalam objek, tambahkan 1 ke nilai tersebut
     if (objek[Value]) {
       objek[Value] += 1;
     } else {
-      // Jika nilai belum ada dalam objek countObj, buat kunci baru dengan nilai 1
+      // Jika nilai belum ada dalam objek, buat kunci baru dengan nilai 1
       objek[Value] = 1;
     }
   }
