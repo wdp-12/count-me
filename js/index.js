@@ -1,15 +1,14 @@
 function countMe(arr) {
-  // Inisialisasi object untuk menyimpan hasil perhitungan
+  // Inisialisasi object u/ save result perhitungan
   let result = {};
 
-  // Loop melalui elemen-elemen dalam array
   while (arr.length > 0) {
-    // Ambil elemen pertama dari array
-    let current = arr.shift();
+  
+    let current = arr.shift(); // Pake .shift() u/ ambil elemen 1 dari array
 
-    // Periksa apakah elemen tersebut sudah ada dalam object hasil
+    // Periksa elemen sudah ada dalam result belum?
     if (result[current]) {
-      // Jika sudah ada, tambahkan 1 ke nilai yang ada
+      // Jika sudah ada, tambah 1 ke nilai yang ada
       result[current] += 1;
     } else {
       // Jika belum ada, inisialisasi dengan 1
